@@ -1,0 +1,16 @@
+/HelloWorldFunction/build/
+/HelloWorldFunction/.gradle/
+/HelloWorldFunction/.idea/
+/HelloWorldFunction/gradlew
+/HelloWorldFunction/gradlew.bat
+/.idea/.gitignore
+/.idea/aws.xml
+/.idea/codeStyles
+/.idea/enois.iml
+/.idea/gradle.xml
+/HelloWorldFunction/gradle/wrapper/gradle-wrapper.jar
+/HelloWorldFunction/gradle/wrapper/gradle-wrapper.properties
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml

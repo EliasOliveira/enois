@@ -13,7 +13,7 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: HelloWorldFunction
+      CodeUri: ./HelloWorldFunction/build/libs/HelloWorldFunction.jar
       Handler: helloworld.functions.Get
       Runtime: java11
       MemorySize: 512
@@ -27,22 +27,22 @@ Resources:
             Path: /hello
             Method: get
 
-  PostFunction:
-    Type: AWS::Serverless::Function
-    Properties:
-      CodeUri: HelloWorldFunction
-      Handler: helloworld.functions.Post
-      Runtime: java11
-      MemorySize: 512
-      Environment:
-        Variables:
-          PARAM1: VALUE
-      Events:
-        HelloWorld:
-          Type: Api
-          Properties:
-            Path: /hello
-            Method: post
+            #  PostFunction:
+            #    Type: AWS::Serverless::Function
+            #    Properties:
+            #      CodeUri: HelloWorldFunction
+            #      Handler: helloworld.functions.Post
+            #      Runtime: java11
+            #      MemorySize: 512
+            #      Environment:
+            #        Variables:
+            #          PARAM1: VALUE
+            #      Events:
+            #        HelloWorld:
+            #          Type: Api
+            #          Properties:
+            #            Path: /hello
+            #            Method: post
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
